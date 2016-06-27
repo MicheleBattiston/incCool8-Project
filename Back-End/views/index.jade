@@ -1,8 +1,15 @@
+include ./card.jade
+
 extends layout
 
 block content
 
 	div(class="container")
 		include ./slider.jade
-	//h1= title
-	//p Welcome to #{title}
+		
+		section
+			div(class="row")
+				+card("Category 1", "Description 1", "/images/cat1.jpg")
+				+card("Category 2", "Description 2", "/images/cat2.jpg")
+				+card("Category 3", "Description 3", "/images/cat3.jpg")
+				+card("Category 4", "Description 4", "/images/cat4.jpg")

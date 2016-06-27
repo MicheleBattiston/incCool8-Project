@@ -1,0 +1,8 @@
+mixin card(name, description, image)
+    div(class="col s4 m3")
+        div(class="card")
+            div(class="card-image")
+                img(src=image)     
+            div(class="card-content")
+                span(class="black-text card-title")= name
+                p= description
