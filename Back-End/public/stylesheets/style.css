@@ -3,3 +3,7 @@
     width: 100%;
     height: auto;
 }
+
+.white-text {
+	color: white !important;
+}
