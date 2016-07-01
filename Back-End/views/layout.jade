@@ -1,17 +1,23 @@
 doctype html
 html
 	head
-		title= title
-		link(rel='stylesheet', href='/stylesheets/style.css')
-		link(rel='stylesheet', href='/stylesheets/material.min.css')
+		title Clientepazzo E-Commerce
+		link(rel='stylesheet' href='/stylesheets/style.css')
+		link(rel='stylesheet' href='/stylesheets/material.min.css')
+		link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+		link(rel='stylesheet' href='/stylesheets/owl.carousel.css')
+		link(rel='stylesheet' href='/stylesheets/owl.theme.css')
+		link(rel='stylesheet' href='/stylesheets/owl.transitions.css')
 	body
-		header
-			include ./navbar.jade
+		div(class="demo-layout-transparent mdl-layout mdl-js-layout")
+			include ./header.jade
 
-		main
-			block content
+			main(class="mdl-layout__content")
+				block content
 
-		include ./footer.jade
+				include ./footer.jade
 
 		script(type='text/javascript', src='/javascripts/jquery-3.0.0.min.js')
 		script(type='text/javascript', src='/javascripts/material.min.js')
+		script(type='text/javascript', src='/javascripts/owl.carousel.min.js')
+		script(type='text/javascript', src='/javascripts/init.js')
